@@ -1,20 +1,18 @@
 #REMOVE PASS AND FIX THIS FUNCTION
 def anagram(string1, string2):
-    list1 = list(string1)
-    list1.sort()
-    list2 = list(string2)
-    list2.sort()
-
-    if list1 == list2:
+   string1 = string1.lower()
+   string2 = string2.lower()
+   if (len(string1) == len(string2)):
+    new_string1 = sorted(string1)
+    new_string2 = sorted(string2)
+    if (new_string1 == new_string2):
         return ('True')
-    if list1 != list2:
+    else:
         return ('False')
+   else:
+      return ('False')
 
 if __name__ == '__main__':
-    input1 = str(input())
-    input2 = str(input())
-
-    list1 = []
-    list2 = []
-
-    print(anagram(list1, list2))
+    string1 = input()
+    string2 = input()
+    print(anagram(string1, string2))
