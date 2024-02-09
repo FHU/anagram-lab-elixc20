@@ -10,7 +10,7 @@ def anagram(string1, string2):
     if list1 != list2:
         return ('False')
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     input1 = str(input())
     input2 = str(input())
 
