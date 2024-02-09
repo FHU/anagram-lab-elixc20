@@ -12,11 +12,11 @@ def anagram(string1, string2):
     new_string1 = sorted(string1)
     new_string2 = sorted(string2)
     if (new_string1 == new_string2):
-        return ('True')
+        return True
     else:
-        return ('False')
+        return False
    else:
-      return ('False')
+      return False
 
 if __name__ == '__main__':
     word1 = input()
